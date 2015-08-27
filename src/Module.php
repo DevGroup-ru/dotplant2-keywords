@@ -1,7 +1,6 @@
 <?php
 
-namespace Dotplant\Keywords;
-
+namespace DotPlant\Keywords;
 
 use app\backend\components\BackendController;
 use app\backend\events\BackendEntityEditEvent;
