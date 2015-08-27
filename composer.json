@@ -1,0 +1,14 @@
+{
+  "name": "dotplant/keywords",
+  "description": "Meta-keywords support for DotPlant2",
+  "type": "dotplant2-extension",
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "Dotplant\\Keywords\\": "src/"
+    }
+  },
+  "require": {
+    "yiisoft/yii2": "~2.0.6"
+  }
+}
