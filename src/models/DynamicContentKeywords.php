@@ -1,13 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: ivansal
- * Date: 28.08.15
- * Time: 17:25
- */
 
 namespace DotPlant\Keywords\models;
-
 
 use yii\db\ActiveRecord;
 
