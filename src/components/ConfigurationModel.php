@@ -25,7 +25,14 @@ class ConfigurationModel extends BaseConfigurationModel
     public function webApplicationAttributes()
     {
         return [
-
+        	'modules' => [
+                'Keywords' => [
+                    'class' => 'DotPlant\Keywords\Module',
+                ],
+            ],
+            'bootstrap' => [
+                'Keywords' => 'Keywords',
+            ],
         ];
     }
 
@@ -49,14 +56,7 @@ class ConfigurationModel extends BaseConfigurationModel
     public function commonApplicationAttributes()
     {
         return [
-            'modules' => [
-                'Keywords' => [
-                    'class' => 'DotPlant\Keywords\Module',
-                ],
-            ],
-            'bootstrap' => [
-                'Keywords' => 'Keywords',
-            ],
+            
         ];
     }
 
