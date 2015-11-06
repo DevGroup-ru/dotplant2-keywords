@@ -11,6 +11,7 @@ use app\models\DynamicContent;
 use app\models\Object;
 use app\modules\page\backend\PageController as BackendPageController;
 use app\modules\page\controllers\PageController;
+use app\modules\page\models\Page;
 use app\modules\shop\controllers\BackendCategoryController;
 use app\modules\shop\controllers\BackendProductController;
 use app\modules\shop\controllers\ProductController;
@@ -53,17 +54,17 @@ class Module extends ExtensionModule implements BootstrapInterface
                     $backendControllers = [
                         [
                             'class' => BackendPageController::className(),
-                            'editSaveConst' => BackendPageController::BACKEND_PAGE_EDIT_SAVE,
+                            'editSaveConst' => BackendPageController::BACKEND_PAGE_AFTER_SAVE,
                             'editFormConst' => BackendPageController::BACKEND_PAGE_EDIT_FORM,
                         ],
                         [
                             'class' => BackendProductController::className(),
-                            'editSaveConst' => BackendProductController::EVENT_BACKEND_PRODUCT_EDIT_SAVE,
+                            'editSaveConst' => BackendProductController::EVENT_BACKEND_PRODUCT_AFTER_SAVE,
                             'editFormConst' => BackendProductController::EVENT_BACKEND_PRODUCT_EDIT_FORM,
                         ],
                         [
                             'class' => BackendCategoryController::className(),
-                            'editSaveConst' => BackendCategoryController::BACKEND_CATEGORY_EDIT_SAVE,
+                            'editSaveConst' => BackendCategoryController::BACKEND_CATEGORY_AFTER_SAVE,
                             'editFormConst' => BackendCategoryController::BACKEND_CATEGORY_EDIT_FORM,
                         ],
                         [
